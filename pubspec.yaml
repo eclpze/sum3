@@ -1,0 +1,49 @@
+name: sum3
+description: "Библиотека uikit"
+publish_to: 'none'
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.2.3
+  flutter_switch: ^0.3.2
+  dropdown_button2: ^2.3.9
+  google_fonts: ^7.0.2
+  modal_bottom_sheet: ^3.0.0
+  sum3_uikit:
+    git:
+      url: https://github.com/eclpze/sum3_uikit/
+      ref: main
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+
+
