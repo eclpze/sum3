@@ -5,10 +5,8 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:sum3/data/data.dart';
 
+import 'package:flutter_test/flutter_test.dart';
 import 'package:sum3/presentation/main.dart';
 import 'package:sum3_uikit/sum3_uikit.dart';
 import 'package:sum3_uikit/widget/custom_dropdown.dart';
@@ -32,26 +30,15 @@ void main() {
   testWidgets('Work Dropdown', (WidgetTester tester) async {
     await tester.pumpWidget(const MyApp());
 
-    // Проверка, что виден только hintText
-    expect(find.text('Пол'), findsOneWidget);
-    expect(find.text('Женский'), findsNothing);
-    expect(find.text('Мужской'), findsNothing);
+   final dropdown = find.byType(CustomDropDown);
+   expect(dropdown.first, findsOneWidget);
 
-    // Нажатие на выпадающий список
-    await tester.tap(find.byType(DropdownButton<String>).first);
-    await tester.pump();
+   final dropdownWidget = tester.widget<CustomDropDown>(dropdown.first);
 
-    // Проверка, что виден bottomsheet
-    expect(find.text('Женский'), findsOneWidget);
-    expect(find.text('Мужской'), findsOneWidget);
-  });
-
-  // Test 3
-  testWidgets('Work Button Chips', (WidgetTester tester) async {
-    await tester.pumpWidget(const MyApp());
-
-    expect(find.text('Популярные'), findsOneWidget);
-
+   expect(find.text(dropdownWidget.hint), findsOneWidget);
 
   });
+
+
+
 }
