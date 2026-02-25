@@ -112,6 +112,7 @@ class _CreateProjectState extends State<CreateProject> {
               ),
               SizedBox(height: 10),
               CustomTextField(
+                colorErrorTextField: error_textfield,
                 type: TextFieldType.text,
                 isTitle: true,
                 title: 'Название проекта',
@@ -129,6 +130,7 @@ class _CreateProjectState extends State<CreateProject> {
               ),
               SizedBox(height: 10),
               CustomTextField(
+                colorErrorTextField: error_textfield,
                 type: TextFieldType.data,
                 isTitle: true,
                 title: 'Дата начала',
@@ -146,6 +148,7 @@ class _CreateProjectState extends State<CreateProject> {
               ),
               SizedBox(height: 10),
               CustomTextField(
+                colorErrorTextField: error_textfield,
                 type: TextFieldType.data,
                 isTitle: true,
                 title: 'Дата окончания',
@@ -182,6 +185,7 @@ class _CreateProjectState extends State<CreateProject> {
               ),
               SizedBox(height: 10),
               CustomTextField(
+                colorErrorTextField: error_textfield,
                 type: TextFieldType.text,
                 isTitle: true,
                 title: 'Источник описания',

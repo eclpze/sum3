@@ -506,7 +506,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: a7d2b43a9b920951032e87429f5ccbba3b5167c7
+      resolved-ref: f30d1dd288407ec3272b0689eda6b726815d1b08
       url: "https://github.com/eclpze/sum3_uikit/"
     source: git
     version: "0.0.1"

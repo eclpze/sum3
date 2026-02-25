@@ -27,6 +27,8 @@ class Test extends StatefulWidget {
 }
 
 class _TestState extends State<Test> {
+  bool isSelected = false; // Переменная для button chips
+  bool inCart = false; // Переменная для card primary
 
   @override
   Widget build(BuildContext context) {
@@ -127,6 +129,7 @@ class _TestState extends State<Test> {
               ),
               SizedBox(height: 20),
               CustomTextField(
+                colorErrorTextField: error_textfield,
                 type: TextFieldType.text,
                 keyboardType: TextInputType.text,
                 isTitle: true,
@@ -149,6 +152,7 @@ class _TestState extends State<Test> {
               ),
               SizedBox(height: 20),
               CustomTextField(
+                colorErrorTextField: error_textfield,
                 type: TextFieldType.password,
                 keyboardType: TextInputType.visiblePassword,
                 isTitle: true,
@@ -184,6 +188,25 @@ class _TestState extends State<Test> {
                 },
                 padding: 0,
                 type: ButtonType.primary,
+              ),
+              SizedBox(height: 20),
+              CustomButton(
+                selectedText: white,
+                selectedButton: accent,
+                textButton: 'Популярные',
+                widthButton: 335,
+                heightButton: 56,
+                colorButton: input_bg,
+                colorText: desc,
+                borderRadius: 10,
+                onPressed: () {
+                  setState(() {
+                    isSelected = !isSelected;
+                  });
+                },
+                padding: 0,
+                type: ButtonType.chips,
+                isSelected: isSelected,
               ),
               SizedBox(height: 20),
               CustomButton(
@@ -231,7 +254,7 @@ class _TestState extends State<Test> {
                     paddingButton: 0,
                     text1: 'Описание',
                     text2:
-                    'Мой выбор для этих шапок – кардные составы, которые раскрываются деликатным пушком. Кашемиры, мериносы, смесовки с ними отлично подойдут на шапку. Кардные составы берите в большое количество сложений, вязать будем резинку 1х1, плотненько. Пряжу 1400-1500м в 100г в 4 сложения, пряжу 700м в 2 сложения. Ориентир для конечной толщины – 300-350м в 100г. Артикулы, из которых мы вязали эту модель: Zermatt Zegna Baruffa, Cashfive, Baby Cashmere Loro Piana, Soft Donegal и другие. Примерный расход на шапку с подгибом 70-90г.',
+                        'Мой выбор для этих шапок – кардные составы, которые раскрываются деликатным пушком. Кашемиры, мериносы, смесовки с ними отлично подойдут на шапку. Кардные составы берите в большое количество сложений, вязать будем резинку 1х1, плотненько. Пряжу 1400-1500м в 100г в 4 сложения, пряжу 700м в 2 сложения. Ориентир для конечной толщины – 300-350м в 100г. Артикулы, из которых мы вязали эту модель: Zermatt Zegna Baruffa, Cashfive, Baby Cashmere Loro Piana, Soft Donegal и другие. Примерный расход на шапку с подгибом 70-90г.',
                     text3: 'Примерный расход:',
                     text4: '80-90 г',
                     padding: 20,
@@ -288,23 +311,6 @@ class _TestState extends State<Test> {
                 type: ButtonType.login,
               ),
               SizedBox(height: 20),
-              CustomButton(
-                textButton: 'Популярные',
-                widthButton: 335,
-                heightButton: 56,
-                colorButton: input_bg,
-                colorText: desc,
-                borderRadius: 10,
-                onPressed: () {
-                  setState(() {
-                    isSelected = !isSelected;
-                  });
-                },
-                padding: 0,
-                type: ButtonType.chips,
-                isSelected: isSelected,
-              ),
-              SizedBox(height: 20),
               CustomHeader(
                 type: HeaderType.big,
                 padding: 30,
@@ -338,6 +344,8 @@ class _TestState extends State<Test> {
               ),
               SizedBox(height: 20),
               CustomCard(
+                heightCounter: 30,
+                widthCounter: 60,
                 colorCard: white,
                 title: 'Рубашка воскресенье для машинного вязания',
                 widthTitle: 275,

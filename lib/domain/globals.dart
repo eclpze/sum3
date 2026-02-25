@@ -7,10 +7,8 @@ import 'package:sum3_uikit/sum3_uikit.dart';
 
 // Переменные для показа uikit в Test
 int currentValue = 0; // Переменная для навигации
-bool isSelected = false; // Переменная для button chips
 String? errorName; // Переменная для textfield
 String? errorPassword; // Переменная для textfield
-bool inCart = true; // Переменная для card primary
 var clearSearch = searchController.clear();
 
 // Переменные для signUp/logIn

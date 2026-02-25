@@ -78,6 +78,7 @@ class _LogInState extends State<LogIn> {
                 ),
                 SizedBox(height: 30),
                 CustomTextField(
+                  colorErrorTextField: error_textfield,
                   type: TextFieldType.text,
                   isTitle: false,
                   keyboardType: TextInputType.text,
@@ -95,6 +96,7 @@ class _LogInState extends State<LogIn> {
                 ),
                 SizedBox(height: 20),
                 CustomTextField(
+                  colorErrorTextField: error_textfield,
                   type: TextFieldType.text,
                   isTitle: false,
                   keyboardType: TextInputType.text,
@@ -112,6 +114,7 @@ class _LogInState extends State<LogIn> {
                 ),
                 SizedBox(height: 20),
                 CustomTextField(
+                  colorErrorTextField: error_textfield,
                   type: TextFieldType.text,
                   isTitle: false,
                   keyboardType: TextInputType.text,
@@ -129,6 +132,7 @@ class _LogInState extends State<LogIn> {
                 ),
                 SizedBox(height: 20),
                 CustomTextField(
+                  colorErrorTextField: error_textfield,
                   type: TextFieldType.data,
                   isTitle: false,
                   keyboardType: TextInputType.number,
@@ -165,6 +169,7 @@ class _LogInState extends State<LogIn> {
                 ),
                 SizedBox(height: 20),
                 CustomTextField(
+                  colorErrorTextField: error_textfield,
                   type: TextFieldType.text,
                   isTitle: false,
                   keyboardType: TextInputType.emailAddress,

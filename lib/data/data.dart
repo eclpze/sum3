@@ -3,7 +3,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:sum3/domain/globals.dart';
 import 'package:sum3/presentation/cart.dart';
 import 'package:sum3/presentation/mainPage.dart';
-import 'package:sum3/presentation/pincode.dart';
+import 'package:sum3/presentation/pincode/pincode.dart';
 import 'package:sum3/presentation/section/catalog.dart';
 import 'package:sum3/presentation/section/home.dart';
 import 'package:sum3/presentation/section/pdfScreen.dart';

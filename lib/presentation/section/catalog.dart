@@ -66,6 +66,8 @@ class _CatalogState extends State<Catalog> {
                         child: CustomButton(
                           textButton: sectionsName[index],
                           widthButton: sectionsWidth[index],
+                          selectedText: white,
+                          selectedButton: accent,
                           heightButton: 48,
                           colorButton: input_bg,
                           isSelected: currentSection == index,

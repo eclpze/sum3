@@ -67,6 +67,7 @@ class _PasswordRegState extends State<PasswordReg> {
                 ),
                 SizedBox(height: 100),
                 CustomTextField(
+                  colorErrorTextField: error_textfield,
                   type: TextFieldType.password,
                   isTitle: true,
                   keyboardType: TextInputType.visiblePassword,
@@ -88,6 +89,7 @@ class _PasswordRegState extends State<PasswordReg> {
                 ),
                 SizedBox(height: 20),
                 CustomTextField(
+                  colorErrorTextField: error_textfield,
                   type: TextFieldType.password,
                   isTitle: true,
                   keyboardType: TextInputType.visiblePassword,

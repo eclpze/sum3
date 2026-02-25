@@ -69,6 +69,7 @@ class _SignUpState extends State<SignUp> {
                 ),
                 SizedBox(height: 60),
                 CustomTextField(
+                  colorErrorTextField: error_textfield,
                   type: TextFieldType.text,
                   isTitle: true,
                   keyboardType: TextInputType.emailAddress,
@@ -86,6 +87,7 @@ class _SignUpState extends State<SignUp> {
                 ),
                 SizedBox(height: 14),
                 CustomTextField(
+                  colorErrorTextField: error_textfield,
                   type: TextFieldType.password,
                   isTitle: true,
                   keyboardType: TextInputType.visiblePassword,
